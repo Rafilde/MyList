@@ -33,7 +33,15 @@ public class StaticList {
 			System.out.println("error! i can't find this position");
 		}
 	}
-	public void getSize() {
+	public int indexOf(int elemento) {
+		for(int i = 0; i < cont; i++) {
+			if(elemento == v[i]) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	public void size() {
 		System.out.println(cont);
 	}
 	public int get(int pos) {

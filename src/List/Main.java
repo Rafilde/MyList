@@ -12,11 +12,11 @@ public class Main {
 		lista.add(5);
 		System.out.println(lista);
 		
-		lista.getSize();
+		lista.size();
 		
 		lista.addPosition(2, 10);
 		System.out.println(lista);
-		lista.getSize();
+		lista.size();
 		
 		for(int i = 0; i < 30; i++) {
 			lista.add(rand.nextInt(100));
@@ -26,5 +26,7 @@ public class Main {
 		System.out.println(lista.get(0));
 		
 		System.out.println(lista.contains(0));
+		
+		System.out.println(lista.indexOf(59));
 	}
 }
