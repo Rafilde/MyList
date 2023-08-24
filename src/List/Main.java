@@ -27,6 +27,14 @@ public class Main {
 		
 		System.out.println("Esse número tem na lista ? " + lista.contains(0));
 		
-		System.out.println("Posição do elemento: " + lista.indexOf(59));
+		System.out.println("Posição do elemento: " + lista.indexOf(5));
+		
+		lista.remove(0);
+		System.out.println(lista);
+		lista.remove(6);
+		System.out.println(lista);
+		
+		lista.removeElement(42);
+		System.out.println(lista);
 	}
 }

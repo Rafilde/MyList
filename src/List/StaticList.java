@@ -1,6 +1,6 @@
 package List;
 
-public class StaticList {
+public class StaticList<T> {
 	int[] v; 
 	int cont;
 	
@@ -32,6 +32,17 @@ public class StaticList {
 		} else {
 			System.out.println("error! i can't find this position");
 		}
+	}
+	public void removeElement(int value) {
+		remove(indexOf(value));
+	}
+	public void remove(int pos) {
+		if(pos >= 0) {
+			for(int i = pos; i < cont; i++) {
+				v[i] = v[i + 1];
+			}
+		}
+		cont--;
 	}
 	public int indexOf(int elemento) {
 		for(int i = 0; i < cont; i++) {
