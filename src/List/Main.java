@@ -19,6 +19,6 @@ public class Main {
 			lista.add(rand.nextInt(100));
 		}
 		System.out.println(lista);
-		
+		System.out.println(lista.get(0));
 	}
 }

@@ -36,6 +36,9 @@ public class StaticList {
 	public void getSize() {
 		System.out.println(cont);
 	}
+	public int get(int pos) {
+		return v[pos];
+	}
 	public String toString() {
 		String str = "[ "; 
 		for(int i = 0; i < cont; i++) {
