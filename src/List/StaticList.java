@@ -24,11 +24,11 @@ public class StaticList {
 	}
 	public void addPosition(int pos, int value) {
 		if(pos < value) {
-			for (int i = cont; i > pos; i--) { //meu cont tem 4 posições, meu número 5 está na posição 3
-				v[i] = v[i - 1]; //to pegando a posição 4 no v[4] e lançando para ela quem está na posição 4 - 1 = 3 (posição).
+			for (int i = cont; i > pos; i--) { 
+				v[i] = v[i - 1]; 
 			}
 			v[pos] = value;
-			cont++; //aqui nosso cont = 5 ai na hora de ir pra toString ele fica cont 5;
+			cont++; 
 		} else {
 			System.out.println("error! i can't find this position");
 		}

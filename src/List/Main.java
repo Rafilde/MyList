@@ -11,14 +11,18 @@ public class Main {
 		lista.add(6);
 		lista.add(5);
 		System.out.println(lista);
+		
 		lista.getSize();
+		
 		lista.addPosition(2, 10);
 		System.out.println(lista);
 		lista.getSize();
+		
 		for(int i = 0; i < 30; i++) {
 			lista.add(rand.nextInt(100));
 		}
 		System.out.println(lista);
+		
 		System.out.println(lista.get(0));
 	}
 }
