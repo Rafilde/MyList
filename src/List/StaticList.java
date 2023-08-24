@@ -39,6 +39,14 @@ public class StaticList {
 	public int get(int pos) {
 		return v[pos];
 	}
+	public boolean contains(int elemento) {
+		for(int i = 0; i < cont; i++) {
+			if(v[i] == elemento) {
+				return true;
+			}
+		}
+		return false; 
+	}
 	public String toString() {
 		String str = "[ "; 
 		for(int i = 0; i < cont; i++) {

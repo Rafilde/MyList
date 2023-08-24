@@ -24,5 +24,7 @@ public class Main {
 		System.out.println(lista);
 		
 		System.out.println(lista.get(0));
+		
+		System.out.println(lista.contains(0));
 	}
 }
