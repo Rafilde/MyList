@@ -23,10 +23,10 @@ public class Main {
 		}
 		System.out.println(lista);
 		
-		System.out.println(lista.get(0));
+		System.out.println("O elemento da posição x é: " + lista.get(0));
 		
-		System.out.println(lista.contains(0));
+		System.out.println("Esse número tem na lista ? " + lista.contains(0));
 		
-		System.out.println(lista.indexOf(59));
+		System.out.println("Posição do elemento: " + lista.indexOf(59));
 	}
 }
