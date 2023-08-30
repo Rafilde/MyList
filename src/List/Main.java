@@ -1,14 +1,23 @@
 package List;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
 		Random rand = new Random();
-		StaticList lista = new StaticList(10);
-		lista.add("Peru");
+		Scanner sc = new Scanner(System.in);
+		StaticList lista = new StaticList();
+		for(int i  =0; i < 5; i++) {
+			String pokemon = sc.next();
+			if(!lista.contains(pokemon)) {
+				lista.add(pokemon);
+			}
+			System.out.println(lista.size());
+		}
+		System.out.println(lista.size());
+		/*lista.add("Peru");
 		lista.add("OI");
-		lista.add(34);
 		lista.add("Ola");
 		lista.add("Eae");
 		lista.add("Pão");
@@ -80,7 +89,7 @@ public class Main {
 		lista.add("Pão");
 		lista.add("Manga");
 		lista.add("Afonso");
-		System.out.println(lista);
+		System.out.println(lista);*/
 		/*lista.add(23);
 		lista.add(4);
 		lista.add(6);
