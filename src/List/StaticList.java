@@ -58,7 +58,19 @@ public class StaticList<T> {
 		return cont;
 	}
 	public Object get(int pos) {
-		return v[pos];
+		if(pos >= cont) {
+			  throw new ArrayIndexOutOfBoundsException(pos);
+		} 
+		return (T) v[pos];
+	}
+	public void set(int pos, T elemento) {
+		if(pos >= cont) {
+			throw new ArrayIndexOutOfBoundsException(pos);
+		}
+		v[pos] = elemento;
+	}
+	public boolean isEmpty() { 
+		return cont == 0;
 	}
 	public boolean contains(T elemento) {
 		for(int i = 0; i < cont; i++) {

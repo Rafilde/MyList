@@ -8,13 +8,11 @@ public class Main {
 		Random rand = new Random();
 		Scanner sc = new Scanner(System.in);
 		StaticList lista = new StaticList();
-		for(int i  =0; i < 5; i++) {
-			String pokemon = sc.next();
-			if(!lista.contains(pokemon)) {
-				lista.add(pokemon);
-			}
-			System.out.println(lista.size());
-		}
+		lista.add(10);
+		lista.add(20);
+		lista.add(30);
+		lista.add(40);
+		System.out.println(lista.indexOf(30));
 		System.out.println(lista.size());
 		/*lista.add("Peru");
 		lista.add("OI");
