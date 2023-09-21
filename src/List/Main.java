@@ -14,6 +14,7 @@ public class Main {
 		lista.add(40);
 		System.out.println(lista.indexOf(30));
 		System.out.println(lista.size());
+		System.out.println(lista);
 		/*lista.add("Peru");
 		lista.add("OI");
 		lista.add("Ola");

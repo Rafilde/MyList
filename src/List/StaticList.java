@@ -39,12 +39,14 @@ public class StaticList<T> {
 		remove(indexOf(value));
 	}
 	public void remove(int pos) {
-		if(pos >= 0) {
-			for(int i = pos; i < cont; i++) {
-				v[i] = v[i + 1];
-			}
-		}
-		cont--;
+		if (pos >= 0 && pos < cont) {
+	        for (int i = pos; i < cont - 1; i++) {
+	            v[i] = v[i + 1];
+	        }
+	        cont--;
+	    } else {
+	        System.out.println("error! Invalid position to remove");
+	    }
 	}
 	public int indexOf(T elemento) {
 		for(int i = 0; i < cont; i++) {
@@ -81,10 +83,13 @@ public class StaticList<T> {
 		return false; 
 	}
 	public String toString() {
-		String str = "[ "; 
+		StringBuilder str = new StringBuilder(); 
 		for(int i = 0; i < cont; i++) {
-			str += v[i] + " ";
+			 str.append(v[i]);
+			 if(i < cont - 1) {
+				 str.append(", ");
+			 }
 		}
-		return str + "]";
+		return "["+str.toString()+"]";
 	}
 }
